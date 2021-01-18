@@ -1,0 +1,117 @@
+<!doctype html>
+<html ⚡ lang="en">
+<head>
+<meta charset="utf-8">
+<title>amp-story attachement</title>
+<meta name="description" content="Amp Test">
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+<script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+<script async custom-element = "amp-video" src = "https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+<script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
+<script async custom-element="amp-dailymotion" src="https://cdn.ampproject.org/v0/amp-dailymotion-0.1.js"></script>
+<link rel="canonical" href="http://amp.zmooz.com/">
+<meta name="viewport" content="width=device-width">
+<style amp-boilerplate> 
+    body { 
+        -webkit-animation: -amp-start 8s  
+            steps(1, end) 0s 1 normal both; 
+
+        -moz-animation: -amp-start 8s  
+            steps(1, end) 0s 1 normal both; 
+
+        -ms-animation: -amp-start 8s  
+            steps(1, end) 0s 1 normal both; 
+
+        animation: -amp-start 8s  
+            steps(1, end) 0s 1 normal both; 
+    } 
+
+    @-webkit-keyframes -amp-start { 
+        from { 
+            visibility: hidden 
+        } 
+
+        to { 
+            visibility: visible 
+        } 
+    } 
+
+    @-moz-keyframes -amp-start { 
+        from { 
+            visibility: hidden 
+        } 
+
+        to { 
+            visibility: visible 
+        } 
+    } 
+
+    @-ms-keyframes -amp-start { 
+        from { 
+            visibility: hidden 
+        } 
+
+        to { 
+            visibility: visible 
+        } 
+    } 
+
+    @-o-keyframes -amp-start { 
+        from { 
+            visibility: hidden 
+        } 
+
+        to { 
+            visibility: visible 
+        } 
+    } 
+
+    @keyframes -amp-start { 
+        from { 
+            visibility: hidden 
+        } 
+
+        to { 
+            visibility: visible 
+        } 
+    } 
+</style> 
+<noscript> 
+    <style amp-boilerplate> 
+        body { 
+            -webkit-animation: none; 
+            -moz-animation: none; 
+            -ms-animation: none; 
+            animation: none 
+        } 
+    </style> 
+</noscript> 
+</head>
+<body>
+<amp-story
+    standalone
+    title="Test iframe"
+    publisher="Psychologies, Sam 02 Jan 2021 - AMP Project"
+    publisher-logo-src="https://zmooz.com/favvertical.png"
+    poster-portrait-src="https://zmooz.com/favvertical.png"
+    poster-square-src="https://zmooz.com/favvertical.png"
+    poster-landscape-src="https://zmooz.com/favvertical.png"
+   
+>
+<amp-story-page id="foo">
+    <amp-story-grid-layer template="fill">
+      <amp-img src="https://example.ampproject.org/helloworld/bg1.jpg" width="900" height="1600">
+    </amp-story-grid-layer>
+    <amp-story-page-attachment layout="nodisplay">
+      
+        <amp-dailymotion
+        data-videoid="x2m8jpp"
+        layout="responsive"
+        width="480"
+        height="270"
+        autoplay
+      ></amp-dailymotion>
+    </amp-story-page-attachment>
+  </amp-story-page>
+</amp-story>
+</body></html>
